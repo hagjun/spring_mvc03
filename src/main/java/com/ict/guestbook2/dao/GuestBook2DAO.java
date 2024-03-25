@@ -6,9 +6,11 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.ict.guestbook2.dao.GuestBook2DAO;
 
+@Repository
 public class GuestBook2DAO {
 	private static final Logger logger = LoggerFactory.getLogger(GuestBook2DAO.class);
 	

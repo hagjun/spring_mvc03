@@ -17,7 +17,7 @@
 	<div>
 		<h2> 방 명 록 </h2>
 		<hr>
-		<p>[<a href="gb2_write.do">방명록 쓰기</a>]</p>
+		<p>[<a href="gb_write.do">방명록 쓰기</a>]</p>
 		<table>
 			<thead>
 				<tr style="background-color: #99ccff"><th>번호</th><th>작성자</th><th>제목</th><th>작성일</th></tr>
@@ -28,11 +28,11 @@
 						<tr><td colspan="4"><h3>원하는 정보가 존재하지 않습니다.</h3> </td></tr>
 					</c:when>
 					<c:otherwise>
-						<c:forEach var="k" items="${vo.list }" varStatus="vs">
+						<c:forEach var="k" items="${list }" varStatus="vs">
 							<tr>
 								<td>${vs.count}</td>
 								<td>${k.name}</td>
-								<td><a href="gb2_detail.do?idx=${k.idx }">${k.subject}</a></td>
+								<td><a href="gb_detail.do?idx=${k.idx }">${k.subject}</a></td>
 								<td>${k.regdate.substring(0, 10)}</td>
 							</tr>
 						</c:forEach>
