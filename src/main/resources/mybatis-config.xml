@@ -8,10 +8,10 @@
 		<setting name="jdbcTypeForNull" value="NULL" />
 		<!-- MyBatis에서 캐싱기능 종료 -->
 		<setting name="cacheEnabled" value="false" />
- 	</settings>
+	</settings>
  	<typeAliases>
 		<typeAlias type="com.ict.guestbook.dao.GuestBookVO" alias="gvo"/>
-		<typeAlias type="com.ict.guestbook2.dao.GuestBook2VO" alias="g2vo"/> 
+		<typeAlias type="com.ict.guestbook2.dao.GuestBook2VO" alias="g2vo"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="mappers/guestbook-mapper.xml" />

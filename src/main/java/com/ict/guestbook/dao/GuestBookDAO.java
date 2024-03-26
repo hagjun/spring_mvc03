@@ -37,22 +37,34 @@ public class GuestBookDAO {
 		}
 		return null;
 	}
+	
 	public int getGuestDelete(String idx) {
 		try {
-			return sqlSessionTemplate.delete("guestbook.delete", idx);
+			return sqlSessionTemplate.delete("guestbook.delete",idx);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		return -1;
-	
 	}
-	
 	public int getGuestUpdate(GuestBookVO gvo) {
 		try {
-			return sqlSessionTemplate.update("guestbook.update", gvo);
+			return sqlSessionTemplate.update("guestbook.update",gvo);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		return -1;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

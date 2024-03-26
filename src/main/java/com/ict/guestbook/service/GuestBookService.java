@@ -6,7 +6,7 @@ import com.ict.guestbook.dao.GuestBookVO;
 
 public interface GuestBookService {
 	// 리스트
-	public List<GuestBookVO>  getGuestList();  
+	public List<GuestBookVO> getGuestList();  
 			
 	// 삽입
 	public int getGuestInsert(GuestBookVO gvo);

@@ -5,20 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title> 방 명 록 </title>
-
 <style type="text/css">
 	a { text-decoration: none;}
 	table{width: 600px; border-collapse:collapse; text-align: center;}
 	table,th,td{border: 1px solid black; padding: 3px}
 	div{width: 600px; margin:auto; text-align: center;}
 </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		let pwdchk = "${pwdchk}";
 		if(pwdchk == 'fail'){
 			alert("비밀번호틀림");
-			return ;
+			return;
 		}
 	});
 </script>
@@ -28,7 +28,6 @@
 		f.submit();
 	}
 </script>
-
 </head>
 <body>
 	<div>
@@ -41,12 +40,10 @@
 					<td bgcolor="#99ccff">비밀번호</td>
 					<td><input type="password" name="pwd" size ="20"/></td>
 				</tr>
-				
 				<tfoot>
 					<tr align="center">
 						<td colspan="2">
-							<input type="hidden" name="idx" value="${idx }">
-							<input type="hidden" name="cmd" value="delete_ok">
+							<input type="hidden" name="idx" value="${idx}">
 							<input type="button" value="삭제" onclick="delete_go(this.form)" />
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<input type="reset" value="취소" />

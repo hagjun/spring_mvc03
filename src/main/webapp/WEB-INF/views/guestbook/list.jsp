@@ -24,26 +24,32 @@
 			</thead>
 			<tbody>
 				<c:choose>
-					<c:when test="${empty list }">
-						<tr><td colspan="4"><h3>원하는 정보가 존재하지 않습니다.</h3> </td></tr>
+					<c:when test="${empty list}">
+						<tr><td colspan="4"> <h3>원하는 정보가 존재하지 않습니다</h3></td></tr>
 					</c:when>
 					<c:otherwise>
-						<c:forEach var="k" items="${list }" varStatus="vs">
+						<c:forEach var="k" items="${list}" varStatus="vs">
 							<tr>
-								<td>${vs.count}</td>
-								<td>${k.name}</td>
-								<td><a href="gb_detail.do?idx=${k.idx }">${k.subject}</a></td>
-								<td>${k.regdate.substring(0, 10)}</td>
+							    <td>${vs.count}</td>
+							    <td>${k.name }</td>
+							    <td><a href="gb_detail.do?idx=${k.idx}"> ${k.subject }</a> </td>
+							    <td>${k.regdate.substring(0,10)}</td>
 							</tr>
 						</c:forEach>
 					</c:otherwise>
 				</c:choose>
-				
 			</tbody>
 		</table>
 	</div>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 

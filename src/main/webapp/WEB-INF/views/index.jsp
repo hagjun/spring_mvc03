@@ -6,17 +6,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	function guestbook_go() {
+	function geustbook_go() {
 		location.href="gb_list.do";
 	}
-	function guestbook2_go() {
+	function geustbook2_go() {
 		location.href="gb2_list.do";
 	}
-	
 </script>
 </head>
 <body>
-	<button onclick="guestbook_go()">GuestBook</button>
-	<button onclick="guestbook_go2()">GuestBook2</button>
+	<button onclick="geustbook_go()">guestbook</button>
+	<button onclick="geustbook2_go()">guestbook2</button>
 </body>
 </html>
